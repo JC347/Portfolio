@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+      <!-- Card Container -->
+      <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+        <!-- Menu Container -->
+        <div
+          class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 mb-24 md:justify-end"
+        >
+          <!-- Menu Items -->
+          <div class="group">
+            <a href="index.html">All Projects</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+
+          <div class="group">
+            <a href="Testing/index.html">About Me</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group">
+            <a href="#">Contact</a>
+            <div
+              class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"
+            ></div>
+          </div>
+        </div>
+        <!--Search Container-->
+
+        <div
+          class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
+        >
+          <!-- Upload Button -->
+          <button
+            class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black"
+            id="filter-btn"
+            data-category="JS-Application"
+          >
+            Applications built with JS
+          </button>
+          <button
+            class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black"
+            id="filter-btn"
+            data-category="Tailwind-Singlepage"
+          >
+            UI built with Tailwind
+          </button>
+          <button
+            class="py-3 px-14 text-md font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black"
+            id="filter-btn"
+            data-category="Tailwind-Component"
+          >
+            UI Components
+          </button>
+        </div>
+        <!-- Gallery Container -->
+        <div
+          class="grid gap-4 md:grid-cols-3 lg:grid-cols-4"
+          id="project-container"
+        ></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
