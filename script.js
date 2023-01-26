@@ -1,5 +1,5 @@
 "use strict";
-console.log("hi");
+
 /*
 const filterBtns = document.querySelectorAll("#filter-btn");
 console.log(filterBtns);
@@ -77,14 +77,6 @@ const projects = [
     img: "images/productUI.png",
     descr: "UI-Component with Tailwind CSS",
     link: "product-modal/index.html",
-  },
-  {
-    id: 3,
-    title: "Newsletter",
-    category: "Tailwind-Component",
-    img: "images/Newsletter.png",
-    descr: "UI-Component with Tailwind CSS",
-    link: "Email-Subscribe/index.html",
   },
 ];
 
